@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.Toolbar
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    android:background="@color/ColorPrimary"
+    android:elevation="2dp"
+    android:theme="@style/AppTheme.NoActionBar"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Chat"
+        android:layout_gravity="left"
+        android:src="@drawable/chat_icon_2"
+        android:background="@color/ColorPrimary"
+        android:id="@+id/ChatButton" />
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Toolbar Title"
+        android:background="@drawable/mana_logo"
+        android:layout_gravity="center"
+        android:id="@+id/toolbar_title" />
+</android.support.v7.widget.Toolbar>

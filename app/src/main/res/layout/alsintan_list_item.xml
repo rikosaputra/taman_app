@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingBottom="10dp"
+        android:textColor="#AB831F"
+        android:textSize="16dp"
+        android:text="Nama Penyedia"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+    <TextView
+    android:id="@+id/description"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/title"
+    android:paddingBottom="10dp"
+    android:textColor="#AB831F"
+    android:textSize="16dp"
+    android:text="Deskripsi Penyedia" />
+    <TextView
+        android:id="@+id/alamat1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/description"
+        android:paddingBottom="10dp"
+        android:textColor="#AB831F"
+        android:textSize="16dp"
+        android:text="Alamat : " />
+    <TextView
+        android:id="@+id/alamat2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/alamat1"
+        android:layout_below="@+id/description"
+        android:paddingBottom="10dp"
+        android:textColor="#AB831F"
+        android:textSize="16dp"
+        android:text=".... " />
+    <TextView
+        android:id="@+id/phone1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/alamat1"
+        android:paddingBottom="10dp"
+        android:textColor="#AB831F"
+        android:textSize="16dp"
+        android:text="Telepon : " />
+    <TextView
+        android:id="@+id/phone2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/phone1"
+        android:layout_below="@+id/alamat1"
+        android:paddingBottom="10dp"
+        android:textColor="#AB831F"
+        android:textSize="16dp"
+        android:text="xxx - xxxx" />
+    <TextView
+        android:id="@+id/email1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/phone1"
+        android:paddingBottom="10dp"
+        android:textColor="#AB831F"
+        android:textSize="16dp"
+        android:text="Email : " />
+    <TextView
+        android:id="@+id/email2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/email1"
+        android:layout_below="@+id/phone1"
+        android:paddingBottom="10dp"
+        android:textColor="#AB831F"
+        android:textSize="16dp"
+        android:text="xxx@xxxx.xxx" />
+    <TextView
+        android:id="@+id/kat1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/email1"
+        android:paddingBottom="10dp"
+        android:textColor="#AB831F"
+        android:textSize="16dp"
+        android:text="Kategori : " />
+    <TextView
+        android:id="@+id/kat2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/kat1"
+        android:layout_below="@+id/email1"
+        android:paddingBottom="10dp"
+        android:textColor="#AB831F"
+        android:textSize="16dp"
+        android:text="xxx, yyy, zzz" />
+</RelativeLayout>

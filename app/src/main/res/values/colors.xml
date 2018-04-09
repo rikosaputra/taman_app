@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#1f4720</color>
+    <color name="colorPrimaryDark">#000000</color>
+    <color name="colorAccent">#999999</color>
+    <color name="bg_chat">#ffffff</color>
+    <color name="input_text">#222222</color>
+    <color name="input_text_hint">#999999</color>
+    <color name="btn_text">#ffffff</color>
+    <color name="btn_bg">#2d662f</color>
+    <color name="lbl_name">#ffffff</color>
+
+    <color name="list_divider">#dedede</color>
+    <color name="bg_bubble_self">#E1E1E1</color>
+
+    <color name="ColorPrimary">#FFF</color>
+    <color name="ColorPrimaryDark">#47fd06</color>
+    <color name="tabsScrollColor">#248800</color>
+    <color name="on_link_touch">#e5ff00</color>
+    <color name="blue_pressed">@android:color/holo_green_dark</color>
+    <color name="blue_normal">@android:color/holo_green_light</color>
+
+    <color name="behind_logo">#2d662f</color>
+    <color name="top_font">#ffffff</color>
+</resources>

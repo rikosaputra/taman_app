@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/bg_chat"
+    android:orientation="vertical"
+    android:padding="10dp" >
+    <!--xmlns:app="http://schemas.android.com/apk/res-auto"-->
+    <!--xmlns:tools="http://schemas.android.com/tools"-->
+    <!--app:layout_behavior="@string/appbar_scrolling_view_behavior"-->
+    <!--tools:context="tanamser.mana_livechatv2.LoginActivity"-->
+    <!--tools:showIn="@layout/activity_login">-->
+
+    <!--  <ImageView
+         android:layout_width="150dp"
+         android:layout_height="75dp"
+         android:id="@+id/logo"
+         android:layout_gravity="center_horizontal"
+         android:src="@drawable/logo"
+         android:contentDescription="logo" />
+     -->
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:weightSum="1">
+
+        <EditText
+            android:id="@+id/input_name"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:hint="Username"
+            android:inputType="text"
+            android:padding="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/edit_text_style"
+            android:maxLines="1"
+            android:layout_weight="1"
+            android:imeOptions="actionNext"
+            android:textColor="@color/input_text"
+            android:textColorHint="@color/input_text_hint" />
+
+
+        <EditText
+            android:id="@+id/input_password"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:hint="Kata sandi"
+            android:padding="10dp"
+            android:layout_marginBottom="10dp"
+            android:maxLines="1"
+            android:layout_weight="1"
+            android:imeOptions="actionNext"
+            android:background="@drawable/edit_text_style"
+            android:textColor="@color/input_text"
+            android:textColorHint="@color/input_text_hint" />
+
+        <CheckBox
+            android:id="@+id/saveLoginCheckBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/password"
+            android:text="Ingatkan saya"
+            android:textColor="@color/input_text"
+            android:textSize="15sp" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:forceHasOverlappingRendering="true"
+            android:layout_weight="11.54">
+
+            <Button android:id="@+id/btn_login"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Masuk"
+                android:layout_marginTop="20dip"
+                android:background="@drawable/button_style"
+                android:textColor="@color/btn_text"
+                android:onClick="clickLoginSaprodi"
+                android:textAllCaps="false"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <!--<ProgressBar-->
+    <!--android:id="@+id/progressBar"-->
+    <!--android:layout_width="30dp"-->
+    <!--android:layout_height="30dp"-->
+    <!--android:layout_alignParentBottom="true"-->
+    <!--android:layout_centerHorizontal="true"-->
+    <!--android:layout_gravity="center"-->
+    <!--android:layout_marginBottom="10dp"-->
+    <!--android:indeterminateTint="@color/colorAccent"-->
+    <!--android:visibility="gone"-->
+    <!--android:indeterminateTintMode="src_atop" />-->
+
+</LinearLayout>

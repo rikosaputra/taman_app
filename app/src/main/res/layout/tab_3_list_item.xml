@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+    <ImageView
+        android:id="@+id/icon"
+        android:layout_width="80dp"
+        android:layout_height="100dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp" />
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/icon"
+        android:paddingBottom="10dp"
+        android:textColor="#AB831F"
+        android:textSize="16dp"
+        android:text=".Nama Komoditas" />
+
+    <TextView
+        android:id="@+id/tvk"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title"
+        android:layout_toRightOf="@+id/icon"
+        android:paddingLeft="10dp"
+        android:textColor="#9E8A33"
+        android:textSize="14dp"
+        android:text="Varietas Rekomendasi:" />
+    <TextView
+        android:id="@+id/tvk1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title"
+        android:layout_toRightOf="@+id/tvk"
+        android:textColor="#9E8A33"
+        android:textSize="14dp"
+        android:text=".Varietas"
+        android:paddingLeft="5dp" />
+
+    <TextView
+        android:id="@+id/tva"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvk1"
+        android:layout_toRightOf="@+id/icon"
+        android:paddingLeft="10dp"
+        android:textColor="#9E8A33"
+        android:textSize="14dp"
+        android:text="Tahun Musim:" />
+    <TextView
+        android:id="@+id/tva1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvk1"
+        android:layout_toRightOf="@+id/tva"
+        android:paddingLeft="5dp"
+        android:textColor="#9E8A33"
+        android:textSize="14dp"
+        android:text=".Tahun Musim" />
+
+    <TextView
+        android:id="@+id/tvb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tva"
+        android:layout_toRightOf="@+id/icon"
+        android:paddingLeft="10dp"
+        android:textColor="#9E8A33"
+        android:textSize="14dp"
+        android:text="Jenis Rawan:" />
+    <TextView
+        android:id="@+id/tvb1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tva"
+        android:layout_toRightOf="@+id/tvb"
+        android:paddingLeft="5dp"
+        android:textColor="#9E8A33"
+        android:textSize="14dp"
+        android:text=".Jenis Rawan" />
+
+    <TextView
+        android:id="@+id/tvc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvb"
+        android:layout_toRightOf="@+id/icon"
+        android:paddingLeft="10dp"
+        android:textColor="#9E8A33"
+        android:textSize="14dp"
+        android:text="Jenis Tahun:" />
+    <TextView
+        android:id="@+id/tvc1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvb"
+        android:layout_toRightOf="@+id/tvc"
+        android:paddingLeft="5dp"
+        android:textColor="#9E8A33"
+        android:textSize="14dp"
+        android:text=".Jenis Tahun" />
+
+    <TextView
+        android:id="@+id/tvd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvc"
+        android:layout_toRightOf="@+id/icon"
+        android:paddingLeft="10dp"
+        android:textColor="#9E8A33"
+        android:textSize="14dp"
+        android:text="Luas Potensi Tanam (ha):" />
+    <TextView
+        android:id="@+id/tvd1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvc"
+        android:layout_toRightOf="@+id/tvd"
+        android:paddingLeft="5dp"
+        android:textColor="#9E8A33"
+        android:textSize="14dp"
+        android:text=".Potensi" />
+
+    <TextView
+        android:id="@+id/tve"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvd"
+        android:layout_toRightOf="@+id/icon"
+        android:paddingLeft="10dp"
+        android:textColor="#9E8A33"
+        android:textSize="14dp"
+        android:text="Luas Terkena (ha):" />
+    <TextView
+        android:id="@+id/tve1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvd"
+        android:layout_toRightOf="@+id/tve"
+        android:paddingLeft="5dp"
+        android:textColor="#9E8A33"
+        android:textSize="14dp"
+        android:text=".Luas Terkena" />
+
+    <TextView
+        android:id="@+id/tvf"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tve"
+        android:layout_toRightOf="@+id/icon"
+        android:paddingLeft="10dp"
+        android:textColor="#9E8A33"
+        android:textSize="14dp"
+        android:text="Persentase Terkena:" />
+    <TextView
+        android:id="@+id/tvf1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tve"
+        android:layout_toRightOf="@+id/tvf"
+        android:paddingLeft="5dp"
+        android:textColor="#9E8A33"
+        android:textSize="14dp"
+        android:text=".Persen Terkena" />
+
+    <TextView
+        android:id="@+id/tvg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvf"
+        android:layout_toRightOf="@+id/icon"
+        android:paddingLeft="10dp"
+        android:textColor="#9E8A33"
+        android:textSize="14dp"
+        android:text="Status Kerawanan:" />
+    <TextView
+        android:id="@+id/tvg1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvf"
+        android:layout_toRightOf="@+id/tvg"
+        android:paddingLeft="5dp"
+        android:textColor="#9E8A33"
+        android:textSize="14dp"
+        android:text=".Status Rawan" />
+
+    <TextView
+        android:id="@+id/tvh"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvg"
+        android:layout_toRightOf="@+id/icon"
+        android:paddingLeft="10dp"
+        android:textColor="#9E8A33"
+        android:textSize="14dp"
+        android:text="Luas Kerusakan (ha):" />
+    <TextView
+        android:id="@+id/tvh1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvg"
+        android:layout_toRightOf="@+id/tvh"
+        android:paddingLeft="5dp"
+        android:textColor="#9E8A33"
+        android:textSize="14dp"
+        android:text=".Luas Kerusakan" />
+
+    <TextView
+        android:id="@+id/tvi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvh"
+        android:layout_toRightOf="@+id/icon"
+        android:paddingLeft="10dp"
+        android:textColor="#9E8A33"
+        android:textSize="14dp"
+        android:text="Persentase Kerusakan:" />
+    <TextView
+        android:id="@+id/tvi1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvh"
+        android:layout_toRightOf="@+id/tvi"
+        android:paddingLeft="5dp"
+        android:textColor="#9E8A33"
+        android:textSize="14dp"
+        android:text=".Persen Kerusakan" />
+
+    <TextView
+        android:id="@+id/tvj"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvi"
+        android:layout_toRightOf="@+id/icon"
+        android:paddingLeft="10dp"
+        android:textColor="#9E8A33"
+        android:textSize="14dp"
+        android:text="Status Kerusakan:" />
+    <TextView
+        android:id="@+id/tvj1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvi"
+        android:layout_toRightOf="@+id/tvj"
+        android:paddingLeft="5dp"
+        android:textColor="#9E8A33"
+        android:textSize="14dp"
+        android:text=".Status Kerusakan" />
+
+
+</RelativeLayout>

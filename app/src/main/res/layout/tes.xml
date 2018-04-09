@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/popup_element"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/popup"
+    android:orientation="vertical"
+    android:padding="10sp"
+    android:contextClickable="false"
+    android:clickable="false"
+    android:baselineAligned="true">
+
+
+    <TableLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TableRow>
+
+            <TextView
+                android:id="@+id/txtView"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5sp"
+                android:text="Nama                  : " />
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:id="@+id/txtView2"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5sp"
+                android:text="NIP                   : " />
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:id="@+id/txtView3"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5sp"
+                android:text="Jabfung               : " />
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:id="@+id/txtView4"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5sp"
+                android:text="Pendidikan            : " />
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:id="@+id/txtView5"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5sp"
+                android:text="Jurusan               : " />
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:id="@+id/txtView6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5sp"
+                android:text="Telpon                : " />
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:id="@+id/txtView7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5sp"
+                android:text="Komoditas             : " />
+        </TableRow>
+
+<TableRow>
+
+
+</TableRow>
+
+
+
+    </TableLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Konsultasi"
+        android:id="@+id/buttonchat"
+        android:background="@drawable/button_style"
+        android:textColor="@color/btn_text"
+        android:textAllCaps="false"
+        android:layout_gravity="center_horizontal" />
+
+    <Button
+        android:id="@+id/btn_close_popup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tutup"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/button_style"
+        android:textColor="@color/btn_text"
+        android:textAllCaps="false"/>
+
+
+</LinearLayout>

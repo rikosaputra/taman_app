@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/bg_chat"
+    android:orientation="vertical"
+    android:padding="0dp" >
+    <!--xmlns:app="http://schemas.android.com/apk/res-auto"-->
+    <!--xmlns:tools="http://schemas.android.com/tools"-->
+    <!--app:layout_behavior="@string/appbar_scrolling_view_behavior"-->
+    <!--tools:context="tanamser.mana_livechatv2.LoginActivity"-->
+    <!--tools:showIn="@layout/activity_login">-->
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:gravity="bottom"
+        android:layout_marginBottom="20dp">
+
+        <ImageButton
+            android:src="@drawable/ic_arrow_left_grey600_24dp"
+            android:id="@+id/back_button"
+            android:background="@android:color/transparent"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="10dp"
+            android:layout_width="50dp"
+            android:layout_height="30dp" />
+
+        <TextView
+            android:text="Form Daftar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView7"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:fontFamily="sans-serif-smallcaps"
+            android:textStyle="normal|bold"
+            android:textColor="@color/tabsScrollColor"/>
+
+        <ImageView
+            android:src="@drawable/tanam_logo"
+            android:id="@+id/imageView4"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp" >
+
+        <EditText
+            android:id="@+id/input_name"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:hint="Username"
+            android:padding="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/edit_text_style"
+            android:textColor="@color/input_text"
+            android:textColorHint="@color/input_text_hint" />
+
+
+        <EditText
+            android:id="@+id/input_email"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress"
+            android:hint="@string/hint_email"
+            android:padding="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/edit_text_style"
+            android:textColor="@color/input_text"
+            android:textColorHint="@color/input_text_hint" />
+
+        <EditText
+            android:id="@+id/input_fullname"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nama lengkap"
+            android:padding="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/edit_text_style"
+            android:textColor="@color/input_text"
+            android:textColorHint="@color/input_text_hint" />
+
+        <EditText
+            android:id="@+id/input_password"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/edit_text_style"
+            android:hint="Kata sandi"
+            android:inputType="textPassword"
+            android:padding="10dp"
+            android:textColor="@color/input_text"
+            android:textColorHint="@color/input_text_hint" />
+
+        <EditText
+            android:id="@+id/input_password2"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/edit_text_style"
+            android:hint="Konfirmasi kata sandi"
+            android:inputType="textPassword"
+            android:padding="10dp"
+            android:singleLine="true"
+            android:textColor="@color/input_text"
+            android:textColorHint="@color/input_text_hint" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <Button android:id="@+id/btn_register"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Daftar"
+                android:layout_marginTop="20dip"
+                android:background="@drawable/button_style"
+                android:textColor="@color/btn_text"
+                android:textAllCaps="false" />
+
+            <Button android:id="@+id/btn_to_login"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Masuk"
+                android:layout_marginBottom="33dp"
+                android:background="@drawable/button_style"
+                android:textColor="@color/btn_text"
+                android:textAllCaps="false" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <!--<ProgressBar-->
+    <!--android:id="@+id/progressBar"-->
+    <!--android:layout_width="30dp"-->
+    <!--android:layout_height="30dp"-->
+    <!--android:layout_alignParentBottom="true"-->
+    <!--android:layout_centerHorizontal="true"-->
+    <!--android:layout_gravity="center"-->
+    <!--android:layout_marginBottom="10dp"-->
+    <!--android:indeterminateTint="@color/colorAccent"-->
+    <!--android:visibility="gone"-->
+    <!--android:indeterminateTintMode="src_atop" />-->
+
+</LinearLayout>

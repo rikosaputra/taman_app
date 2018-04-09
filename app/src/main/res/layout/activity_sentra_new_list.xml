@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    <TableLayout
+        android:id="@+id/tblLo1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <TableRow>
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/icon"
+            android:textColor="#AB831F"
+            android:textSize="16dp"
+            android:text=""
+            android:layout_weight="0.3"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"/>
+        <TextView
+            android:id="@+id/produksi_tahunan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#AB831F"
+            android:textSize="16dp"
+            android:text="-"
+            android:layout_weight="0.3"
+            android:paddingLeft="10dp"
+            android:paddingRight="20dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:gravity="right"/>
+        <TextView
+            android:id="@+id/keterangan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#AB831F"
+            android:textSize="16dp"
+            android:text="-"
+            android:layout_weight="0.4"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:gravity="left"/>
+    </TableRow>
+    </TableLayout>
+</RelativeLayout>

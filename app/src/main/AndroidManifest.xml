@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas/android.com/tools"
+    package="com.example.user.mana_livechatv2">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <uses-feature android:name="android.hardware.camera" />
+
+    <!--
+     needed for older devices -
+     used to check app background / foreground status
+    -->
+    <uses-permission android:name="android.permission.GET_TASKS" />
+
+    <!-- START Added for GCM -->
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+    <permission
+        android:name="info.androidhive.gcm.permission.C2D_MESSAGE"
+        android:protectionLevel="signature" />
+
+    <uses-permission android:name="com.tanam.user.mana_livechatv2.permission.C2D_MESSAGE" />
+
+    <!-- END Added for GCM -->
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+
+    <application
+        android:name=".app.MyApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="Tanam"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name="com.mobileagro.SplashScreen"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <!-- <activity android:name="tanamser.mana_livechatv2.ChatRoomActivity" android:label="@string/title_activity_chat_room" -->
+        <!-- android:theme="@style/AppTheme.NoActionBar"></activity> -->
+        <activity
+            android:name="com.mobileagro.MainActivity"
+            android:label="TANAM"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".MainActivity"
+            android:label="Chat Rooms"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".LoginActivity"
+            android:label="Register"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".RegisterActivity"
+            android:label="Register"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ChatRoomActivity"
+            android:label="Chat"
+            android:parentActivityName=".TabbedActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".TabbedActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
+        <activity
+            android:name=".Pencarian_Narasumber"
+            android:label="Pencarian_Narasumber"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <!-- START Added for GCM -->
+        <receiver
+            android:name="com.google.android.gms.gcm.GcmReceiver"
+            android:exported="true"
+            android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+
+                <category android:name="info.androidhive.gcm" />
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name=".gcm.MyGcmPushReceiver"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+            </intent-filter>
+        </service>
+        <service
+            android:name=".gcm.GcmIntentService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.android.gms.iid.InstanceID" />
+            </intent-filter>
+        </service>
+
+        <!-- END Added for GCM -->
+
+
+        <!-- <activity android:name=".LoginActivity" android:label="@string/title_activity_login" -->
+        <!-- android:theme="@style/AppTheme.NoActionBar"></activity> -->
+
+        <activity
+            android:name="com.mobileagro.VarietasDetail"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name="com.mobileagro.reborn.MainNewActivity"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name="com.mobileagro.reborn.SentraNewActivity"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name="com.mobileagro.reborn.LahanNewActivity"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name="com.mobileagro.reborn.KomoditasNewActivity"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name="com.mobileagro.reborn.VarietasNewActivity"
+            android:windowSoftInputMode="stateHidden" />
+        <activity android:name="com.mobileagro.reborn.bantuan.BantuanIndexActivity" />
+        <activity android:name="com.mobileagro.reborn.bantuan.BantuanSentraProduksi" />
+        <activity android:name="com.mobileagro.reborn.bantuan.BantuanKonsultasi" />
+        <activity android:name="com.mobileagro.reborn.bantuan.BantuanProfil" />
+        <activity android:name="com.mobileagro.reborn.bantuan.BantuanTentang" />
+        <activity android:name="com.mobileagro.reborn.bantuan.BantuanLahan" />
+        <activity android:name="com.mobileagro.reborn.bantuan.BantuanVarietas" />
+        <activity android:name="com.mobileagro.reborn.alsintan_new" />
+        <activity android:name="com.mobileagro.reborn.alsintan_searched" />
+        <activity android:name="com.mobileagro.reborn.alsintan.alsintan_form" />
+        <activity android:name="com.mobileagro.reborn.alsintan.alsintan_main" />
+        <activity android:name="com.mobileagro.reborn.LahanNewActivityDetail" />
+        <activity android:name="com.mobileagro.reborn.SaprodiNew" />
+        <activity
+            android:name="com.mobileagro.reborn.saprodi.BenihActivity"
+            android:windowSoftInputMode="stateHidden" />
+        <activity android:name="com.mobileagro.reborn.saprodi.BenihDetail" />
+        <activity android:name="com.mobileagro.reborn.saprodi.PupukActivity" />
+        <activity android:name="com.mobileagro.reborn.saprodi.PupukDetail" />
+        <activity android:name="com.mobileagro.reborn.saprodi.AlsinActivity" />
+        <activity android:name="com.mobileagro.reborn.saprodi.AlsinDetail" />
+        <activity android:name="com.mobileagro.reborn.VarietasAllNewActivity" />
+        <activity android:name="com.mobileagro.reborn.viewTekno" />
+        <activity android:name="com.mobileagro.reborn.RegisterSaprodi" />
+        <activity android:name="com.mobileagro.reborn.saprodi.LoginSaprodi" />
+        <activity android:name="com.mobileagro.reborn.saprodi.InputSaprodi" />
+        <activity android:name="com.mobileagro.reborn.saprodi.SaprodiInfo" />
+        <activity android:name="com.mobileagro.reborn.new_design.MainMenu" />
+        <activity android:name="com.mobileagro.reborn.TeknologiPertanian"></activity>
+    </application>
+
+</manifest> <!-- <manifest xmlns:android="http://schemas.android.com/apk/res/android"> --><!-- <application> --><!-- <activity android:name="tanamser.mana_livechatv2.ChatRoomActivity" android:label="@string/title_activity_chat_room" --><!-- android:theme="@style/AppTheme.NoActionBar"></activity> --><!-- </application> --><!-- </manifest> -->

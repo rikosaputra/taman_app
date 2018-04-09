@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_login"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="com.example.user.mana_livechatv2.LoginActivity">
+
+    <!--<android.support.design.widget.AppBarLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:theme="@style/AppTheme.AppBarOverlay">-->
+
+        <!--<android.support.v7.widget.Toolbar-->
+            <!--android:id="@+id/toolbar"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="?attr/actionBarSize"-->
+            <!--android:background="?attr/colorPrimary"-->
+            <!--app:popupTheme="@style/AppTheme.PopupOverlay" />-->
+
+    <!--</android.support.design.widget.AppBarLayout>-->
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:gravity="bottom"
+        android:background="@color/behind_logo"
+        android:layout_weight="1">
+
+        <ImageButton
+            app:srcCompat="@drawable/ic_arrow_left_grey600_24dp"
+            android:id="@+id/back_button_login"
+            android:background="@android:color/transparent"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="10dp"
+            android:layout_width="50dp"
+            android:layout_height="30dp"/>
+
+        <TextView
+            android:text="Form Login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView7"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:fontFamily="sans-serif-smallcaps"
+            android:textStyle="normal|bold"
+            android:textColor="@color/top_font"/>
+
+        <ImageView
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/tanam_logo"
+            android:id="@+id/imageView4"
+            android:layout_weight="1"
+            android:layout_width="wrap_content" />
+
+    </LinearLayout>
+    <include layout="@layout/content_login"
+        android:layout_marginTop="50dp"
+        android:id="@+id/includedLogin"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent" />
+
+</RelativeLayout>

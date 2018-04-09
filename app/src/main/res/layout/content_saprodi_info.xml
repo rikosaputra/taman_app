@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp" >
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nama Kontak"
+            android:textAppearance="@style/TextAppearance.AppCompat.Button"
+            android:fontFamily="sans-serif-condensed" />
+        <EditText
+            android:id="@+id/nama_kontak"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nama Kontak"
+            android:inputType="textPersonName"
+            android:padding="10dp"
+            android:maxLines="1"
+            android:layout_weight="1"
+            android:imeOptions="actionNext"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/edit_text_style"
+            android:textColor="@color/input_text"
+            android:textColorHint="@color/input_text_hint" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nama Perusahaan"
+            android:textAppearance="@style/TextAppearance.AppCompat.Button"
+            android:fontFamily="sans-serif-condensed" />
+        <EditText
+            android:id="@+id/perusahaan"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:hint="@string/hint_perusahaan"
+            android:padding="10dp"
+            android:layout_marginBottom="10dp"
+            android:maxLines="1"
+            android:layout_weight="1"
+            android:imeOptions="actionNext"
+            android:background="@drawable/edit_text_style"
+            android:textColor="@color/input_text"
+            android:textColorHint="@color/input_text_hint" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Alamat"
+            android:textAppearance="@style/TextAppearance.AppCompat.Button"
+            android:fontFamily="sans-serif-condensed" />
+        <EditText
+            android:id="@+id/alamat_form"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:hint="Alamat"
+            android:padding="10dp"
+            android:maxLines="1"
+            android:layout_weight="1"
+            android:imeOptions="actionNext"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/edit_text_style"
+            android:textColor="@color/input_text"
+            android:textColorHint="@color/input_text_hint" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="No. Telepon"
+            android:textAppearance="@style/TextAppearance.AppCompat.Button"
+            android:fontFamily="sans-serif-condensed" />
+        <EditText
+            android:id="@+id/contacn_form"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nomor Telp."
+            android:inputType="phone"
+            android:padding="10dp"
+            android:maxLines="1"
+            android:layout_weight="1"
+            android:imeOptions="actionNext"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/edit_text_style"
+            android:textColor="@color/input_text"
+            android:textColorHint="@color/input_text_hint" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Email"
+            android:textAppearance="@style/TextAppearance.AppCompat.Button"
+            android:fontFamily="sans-serif-condensed" />
+        <EditText
+            android:id="@+id/email_form"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:hint="Email"
+            android:inputType="textEmailAddress"
+            android:padding="10dp"
+            android:maxLines="1"
+            android:layout_weight="1"
+            android:imeOptions="actionNext"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/edit_text_style"
+            android:textColor="@color/input_text"
+            android:textColorHint="@color/input_text_hint" />
+
+    </LinearLayout>
+</LinearLayout>

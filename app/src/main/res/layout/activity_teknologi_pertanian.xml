@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.mobileagro.reborn.TeknologiPertanian">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/behind_logo"
+        android:gravity="bottom">
+
+        <ImageButton
+            app:srcCompat="@drawable/ic_arrow_left_grey600_24dp"
+            android:id="@+id/back_button"
+            android:background="@android:color/transparent"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="10dp"
+            android:layout_width="50dp"
+            android:layout_height="30dp" />
+
+        <TextView
+            android:text="Teknologi Pertanian"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView7"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:fontFamily="sans-serif-smallcaps"
+            android:textStyle="normal|bold"
+            android:textColor="@color/top_font"/>
+
+        <ImageView
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/tanam_logo"
+            android:id="@+id/imageView4"
+            android:layout_weight="1"
+            android:layout_width="wrap_content" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TableLayout
+            android:id="@+id/tblLo1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/bg_bubble_self">
+        <TableRow>
+
+            <TextView
+                android:text="Teknologi Pertanian"
+                android:paddingLeft="10dp"
+                android:paddingRight="20dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:background="@drawable/cell_shape"
+                android:textColor="#fff"
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_horizontal" />
+
+        </TableRow>
+        </TableLayout>
+        <ScrollView
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:id="@+id/scrollView1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true">
+
+            <LinearLayout
+                android:id="@+id/linear_holder"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <ListView
+                    android:id="@+id/listViewTekno"
+                    android:layout_width="match_parent"
+                    android:layout_height="fill_parent" />
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+</LinearLayout>
+</android.support.constraint.ConstraintLayout>
